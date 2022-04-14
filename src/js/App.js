@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../css/App.css';
+import Greet from '../components/Greet';
+import { Component } from 'react';
 
 function App() {
   return (
@@ -22,4 +24,19 @@ function App() {
   );
 }
 
-export default App;
+class Test extends Component{
+  render() {
+    return (
+      <div className="Test">
+        <Greet name="Component Test"/>
+        <Greet name="Another Awesome Test"/>
+        Here is my test component
+        </div>
+    )
+  }
+}
+
+export {
+  App,
+  Test
+};
